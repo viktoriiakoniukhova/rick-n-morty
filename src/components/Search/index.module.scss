@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.input {
+  width: 100%;
+  margin-top: 1em;
+  padding: 1em 0 1em 2.5em;
+
+  @media screen and (max-width: 500px) {
+    padding: 0.5em 0 0.5em 2.5em;
+  }
+
+  background: url(../../assets/search-icon.png) no-repeat scroll 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5em;
+
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+
+  color: rgba(0, 0, 0, 0.5);
+}

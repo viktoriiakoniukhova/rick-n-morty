@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  justify-content: center;
+  margin: 6em 10em 0;
+
+  @media screen and (max-width: 900px) {
+    margin: 4em 4em 0;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin: 2em 1em 0;
+  }
+}

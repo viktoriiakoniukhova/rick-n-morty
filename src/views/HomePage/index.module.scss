@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+
+  width: 100%;
+  .stackHeader {
+    padding: 0 1em;
+    img {
+      max-width: 100%;
+    }
+  }
+  .stackSearch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .searchResults {
+    .headerResults {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.5;
+
+      color: rgba(0, 0, 0, 0.5);
+
+      margin-left: 0.5em;
+    }
+
+    .cardWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

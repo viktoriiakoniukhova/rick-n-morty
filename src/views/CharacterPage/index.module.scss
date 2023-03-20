@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap");
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 0.5em;
+  width: 100%;
+  @media screen and (max-width: 900px) {
+    margin: 4em 2em 0;
+  }
+  @media screen and (max-width: 500px) {
+    margin: 2em 1em 0;
+  }
+
+  .linkBox {
+    a {
+      text-decoration: none;
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      font-family: "Karla";
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      color: #000000;
+      text-transform: uppercase;
+      gap: 0.5em;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+      }
+
+      img {
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+  .contentBox {
+    margin: 1em 4em;
+
+    background: #ffffff;
+    outline: 1px solid #eaeaea;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 4em;
+
+    @media screen and (max-width: 400px) {
+      margin: 1em;
+    }
+
+    .imageBox {
+      width: 20em;
+      height: 20em;
+      overflow: hidden;
+      border-radius: 50%;
+
+      @media screen and (max-width: 500px) {
+        width: 15em;
+        height: 15em;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .title {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 4.8rem;
+      line-height: 1.2;
+      text-align: center;
+      color: #081f32;
+
+      @media screen and (max-width: 500px) {
+        font-size: 4rem;
+      }
+    }
+
+    .infoBox {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      width: 50%;
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+
+      & > p {
+        text-align: center;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.2;
+        letter-spacing: 0.15px;
+
+        color: #8e8e93;
+      }
+
+      .infoBoxSection {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-family: "Roboto";
+          font-weight: 700;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          letter-spacing: 0.15px;
+          color: #081f32;
+        }
+        p {
+          font-family: "Roboto";
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 1.4;
+          letter-spacing: 0.25px;
+          color: #6e798c;
+        }
+      }
+      .divider {
+        height: 2px;
+        margin: 0 0.5em;
+        background: rgba(33, 33, 33, 0.08);
+      }
+    }
+  }
+}
